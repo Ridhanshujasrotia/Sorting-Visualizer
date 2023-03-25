@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav class="navbar">
+        <h1 class="h11">Sorting Visualizer</h1>
+        <ul class="buttons-container">
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class ="btn btn-outline btn-dark newArray">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+                </div>
+        <div class="col gap-3 d-sm-flex">
+            <button type="button" class= "btn btn-outline btn-dark bubbleSort">Bubble Sort</button>
+            <button type="button" class= "btn btn-outline btn-dark selectionSort">Selection Sort</button>
+            <button type="button" class= "btn btn-outline btn-dark insertionSort">Insertion Sort</button>
+            <button type="button" class= "btn btn-outline btn-dark quickSort">Quick Sort</button>
+            <button type="button" class= "btn btn-outline btn-dark mergeSort">Merge Sort</button>
+        </div>
+            </ul>
+    </nav>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <h3>TIME COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- bars -->
+        <div id="bars" class="flex-container"></div>
+
+
+        <div id="Info_Cont2">
+            <h3>SPACE COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+    <footer>
+    
+    <p class="footer-title">About Site</p>
+        <p class="info">This site is a web app for visualizing a bunch of different sorting algorithms 
+            Like Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, Quick Sort With the functionality
+             of (Speed Control) and (Array Size Control)</p>
+        </div>
+        <p class="info">Support Emails - ridhanshujasrotia14@gmail.com , jasrotiaridhanshu14@gmail.com</p>
+        <p class="info">Telephone - 6005984193 , 9858393956</p>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js\home.js"></script>
+    <script src="js\footer.js"></script>
+    <script src="js/bubble_sort.js"></script>
+    <script src="js/insertion_sort.js"></script>
+    <script src="js/merge_sort.js"></script>
+    <script src="js/quick_sort.js"></script>
+    <script src="js/selection_sort.js"></script>
+    <script src="js/sorting.js"></script>
+    
+
+
+    
+</body>
+</html>
